@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>
+        Form clinical data
+    </title>
+</head>
+
+
+
+<body>
+<p>{{ patient.firstName }}</p>
+<p>{{ patient.lastName }}</p>
+
+<form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="submit">
+
+</form>
+</body>
+</html>
